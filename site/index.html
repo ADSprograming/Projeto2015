@@ -1,0 +1,93 @@
+<!DOCKTYPE html>
+<html lang="pt-br" ng-app="petSpa">
+<head>
+    <meta charset="UTF-8"/>
+    <title>PetSpa</title>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,500italic' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="css/normalize.css"/>
+    <link rel="stylesheet" href="css/estilo.css"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+            <script src="js/teste.js"></script>
+      </head>
+<body>
+    <div class="header">
+      <div class="linha">
+        <header>
+            <div class="coluna col4">
+                <h1 class="logo">PetSpa</h1>
+            </div>
+            <div class="coluna col8">
+              <nav>
+                 <ul class="menu inline sem-marcador">
+                   <li><a href="index.html">home</a></li>
+                   <li><a href="clientes.html">cadastre-se</a></li>
+                   <li><a href="servico.html">serviços</a></li>
+                   <li><a href="sobre.html">sobre</a></li>
+                   <li><a href="contato.html">contato</a></li>
+                 </ul>
+              </nav>  
+        </header>
+      </div>
+    </div>
+    <div class="linha">
+      <section>
+       <div class="coluna col12">
+           <img src="img/petspa.jpg" alt="" />
+            <p>Bem vindo ao site do Pet Spa! Aqui você vai encontrar informações sobre nossas atividades. Além de banho e tosa, loja e serviço leva e traz, o Pet Spa conta com solário, descanso com almofadas e música, piscina. E o mais importante: seu melhor amigo recebendo o tratamento que merece.</p>
+           
+        </div>
+      </section>      
+    </div> 
+    <div class="conteudo-extra" ng-controller="PetSpaController">
+        <div class="linha">
+            <div class="coluna col7">
+               <section>
+                 <h2>Slide</h2>
+                 <p>
+                 <img ng-repeat="slide in slides"class="slide"ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+                 </p>
+                 <input class="arrow prev" type="button" ng-click="prevSlide()">
+                 <input class="arrow next" type="button" ng-click="nextSlide()">
+               </section>
+              </div>
+              <div class="coluna col5">
+                  
+                  <h3><b>Alguns dos nosso serviços</b></h3>
+                <ul class="sem-marcador sem-padding noticias">
+                 <li>
+                     <img src="img/pet-sitting-pg.jpg">         
+                     <h4><b>Creche com solário</b></h4> 
+                  <p>O Pet Spa conta com uma ampla área com cobertura retrátil e solário para seu pet brincar.</p>
+                 </li>
+                 <li>
+                     <img src="img/cargo-van-tradesman-bright-white.png">
+                     <h4><b>Leva e traz</b></h4> 
+                  <p>Possuimos o serviço de leva e traz, para você que não tem como levar ou buscar o seu pet.</p>
+                 </li>
+                 <li>         
+                     <img src="img/pug.jpg">
+                     <h4><b>Piscina</b></h4> 
+                  <p>O PetSpa também oferece piscina.</p>
+                 </li>
+                </ul>
+               </div>             
+          </div>          
+      </div>            
+      <div class="footer">
+           <div class="linha">
+              <footer>
+                 <div clas="coluna col12">
+                    <span>&copy 2015 -PetSpa</span>
+                 </div>
+               </footer>
+            </div>
+       </div>             
+
+
+
+
+
+
+
+</body>
+</html>
