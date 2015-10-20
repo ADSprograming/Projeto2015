@@ -1,5 +1,5 @@
 var app = angular.module('petSpa', [])
-    app.controller('PetSpaController', function($scope){
+    app.controller('PetSpaController', ['$scope', '$http', function ($scope, $http){
         $scope.slides = [
             {image: 'img/cat-and-dog_thumb.jpg',descricao:'imagem1'},
             {image: 'img/petshop.jpg',descricao:'imagem2'},
@@ -29,4 +29,24 @@ var app = angular.module('petSpa', [])
             $scope.direction = 'right';
             $scope.currentIndex = ($scope.currentIndex > 0) ? --$scope.currentIndex : $scope.slides.length - 1;
         };
-});
+
+        
+        $scope.cliente = [
+        {nome:"sostenes",cpf:"00903380195",telefone:"993849500"}
+        ];
+    
+        
+        $scope.submitForm = function(isValid) {
+         if(isValid){
+            alert('Formulario ok');
+        }
+    };
+        
+        $scope.buscar = function(cep){
+        $http.get('https://viacep.com.br/ws/'+ cep +'/json/').success(function(local){
+            $scope.endereco = local;
+    });
+        }
+        
+
+}]);

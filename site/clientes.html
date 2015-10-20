@@ -1,13 +1,17 @@
 <!DOCKTYPE html>
-<html lang="pt-br">
+<html lang="pt-br"  ng-app="petSpa">
 <head>
     <meta charset="UTF-8"/>
     <title>PetSpa</title>
     <link href='https://fonts.googleapis.com/css?family=Roboto:400,900,500italic' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.7/angular.min.js"></script>
+    <script src="js/App.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
     <link rel="stylesheet" href="css/normalize.css"/>
     <link rel="stylesheet" href="css/estilo.css"/>
+
 </head>
-<body>
+<body ng-controller="PetSpaController">
     <div class="header">
       <div class="linha">
         <header>
@@ -30,64 +34,65 @@
     <div class="linha">
       <section>
        <h2>Cadastro</h2>
+       <h4>Dados Pessoais</h4>
        <div class="coluna col6 contato">
-         <form action="">
-              <label for="nome">Seu Nome:</label>
-              <input type="text" name="nome" id="nome"/>          
-              <label for="email">Seu Email:</label>
-              <input type="text" name="email" id="email"/>
-              <label for="cpf">Cpf:</label>
-              <input type="text" name="Cpf" id="assunto"/>
-              <input type="submit" class="botao" name="enviar" value="Enviar mensagem &raquo;"/>
-      </div>
-     </section>      
+         <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
+       <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
+             <label>Nome</label>
+             <input type="text" name="nome" class="form-control" ng-model="cliente.nome" required>
+             <p ng-show="userForm.nome.$invalid && !userForm.nome.$pristine" class="help-block">Seu nome é obrigatório</p>
+        </div>
+       <div class="form-group" ng-class="{ 'has-error' : userForm.cpf.$invalid && !userForm.cpf.$pristine }">
+             <label>Cpf</label>
+             <input type="text" name="cpf" class="form-control" ng-model="cliente.cpf" ng-minlength="9" ng-maxlength="11" required>
+             <p ng-show="userForm.cpf.$error.minlength" class="help-block">Cpf no mínimo 9 caracteres.</p>
+             <p ng-show="userForm.cpf.$error.maxlength" class="help-block">Cpf no máximo 11 caracteres.</p>
+       </div>
+       <div class="form-group" ng-class="{ 'has-error' : userForm.telefone.$invalid && !userForm.telefone.$pristine }">
+             <label>Telefone</label>
+             <input type="text" name="telefone" class="form-control" ng-model="cliente.telefone" ng-minlength="8" ng-maxlength="9" required>
+             <p ng-show="userForm.telefone.$invalid && !userForm.telefone.$pristine" class="help-block">Informe um numero válido de no maxímo 9 digitos.</p>
+       </div>
+                     
+       <h4>Endereço</h4>
+      <div class="form-group" ng-class="{ 'has-error' : userForm.cep.$invalid && !userForm.cep.$pristine }">
+             <label>Cep</label>
+             <input type="text" name="cep" class="form-control" ng-model="cep" required>
+             <input type="button"  class="btn btn-primary" ng-click="buscar(cep)" value="buscar">
+             <p ng-show="userForm.cep.$invalid && !userForm.cep.$pristine" class="help-block">Seu cep é obrigatório</p>
+                    </div>
+                    <div class="form-group" ng-class="">
+                        <label>Logradouro</label>
+                        <input type="text" name="logradouro" class="form-control" ng-model="endereco.logradouro">
+                    </div>
+                   <div class="form-group" ng-class="">
+                        <label>Bairro</label>
+                        <input type="text" name="bairro" class="form-control" ng-model="endereco.bairro">
+                    </div>
+                  <div class="form-group" ng-class="">
+                        <label>Cidade</label>
+                        <input type="text" name="cidade" class="form-control" ng-model="endereco.localidade">
+                    </div>
+                  <div class="form-group" ng-class="">
+                        <label>Estado</label>
+                        <input type="text" name="estado" class="form-control" ng-model="endereco.uf">
+                    </div>
+                 <div class="form-group" ng-class="">
+                        <label>Numero</label>
+                        <input type="text" name="numero" class="form-control" ng-model="endereco.numero">
+                    </div>
+                <div class="form-group" ng-class="">
+                        <label>Complemento</label>
+                        <input type="text" name="complemento" class="form-control" ng-model="endereco.complemento">
+                    </div>
+          
+                    <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Enviar</button>
+        </form>
+           </div>  
+    </div>
+    </section>      
     </div> 
-    <div class="conteudo-extra">
-        <div class="linha">
-            <div class="coluna col7">
-               <section>
-                 <h2>Opinião de quem contratou</h2>
-                 <p>Lorem ipsum dolor sit amet, id qui vide ponderum. 
-                    Id audiam quaestio democritum est.
-                    No est percipit consequuntur.</p>          
-                 <p>Lorem ipsum dolor sit amet, id qui vide ponderum. 
-                    Id audiam quaestio democritum est.
-                    No est percipit consequuntur.</p>
-                 <p>Lorem ipsum dolor sit amet, id qui vide ponderum. 
-                    Id audiam quaestio democritum est.
-                    No est percipit consequuntur.</p>
-                  <p><em>Nissin Miojo</em></p>  
-                </section>
-              </div>
-              <div class="coluna col5">
-                <h3>Últimas notícias</h3>
-                <ul class="sem-marcador sem-padding noticias">
-                 <li>
-                   <img src="http://i1.tudocdn.net/img/width115/height95/id142518_1.jpg" 
-                   data-src="http://i1.tudocdn.net/img/width115/height95/id142518_1.jpg" alt=""/>         
-                  <h4>Título da notícia publicada no blog</h4> 
-                  <p>Lorem ipsum dolor sit amet, id qui vide ponderum. 
-                    Id audiam quaestio democritum est.</p>
-                 </li>
-                 <li>
-                   <img src="http://i1.tudocdn.net/img/width115/height95/id142518_1.jpg" 
-                   data-src="http://i1.tudocdn.net/img/width115/height95/id142518_1.jpg" alt=""/>         
-                  <h4>Título da notícia publicada no blog</h4> 
-                  <p>Lorem ipsum dolor sit amet, id qui vide ponderum. 
-                    Id audiam quaestio democritum est.</p>
-                 </li>
-                 <li>
-                   <img src="http://i1.tudocdn.net/img/width115/height95/id142518_1.jpg" 
-                   data-src="http://i1.tudocdn.net/img/width115/height95/id142518_1.jpg" alt=""/>         
-                  <h4>Título da notícia publicada no blog</h4> 
-                  <p>Lorem ipsum dolor sit amet, id qui vide ponderum. 
-                    Id audiam quaestio democritum est.</p>
-                 </li>
-                </ul>
-               </div>             
-          </div>          
-      </div>            
-      <div class="footer">
+     <div class="footer">
            <div class="linha">
               <footer>
                  <div clas="coluna col12">
@@ -96,12 +101,6 @@
                </footer>
             </div>
        </div>             
-
-
-
-
-
-
-
+       
 </body>           
 </html>    

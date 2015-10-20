@@ -173,13 +173,13 @@ height: 150px;
 width: auto;
 }
 
-.arrow.prev button {
+button.arrow.prev  {
  background-image:url ("img/prev.png");
  left: 20px;
 opacity: 0.2;
  transition: all 0.2s linear 0s;
   }
-.arrow.next button {
+button.arrow.next {
  background-image:url ("img/next.png");
  opacity: 0.2;
  right: 20px;
