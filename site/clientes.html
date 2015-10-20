@@ -35,31 +35,36 @@
       <section>
        <h2>Cadastro</h2>
        <h4>Dados Pessoais</h4>
-       <div class="coluna col6 contato">
+
+     <div class="coluna col6 contato">
          <form name="userForm" ng-submit="submitForm(userForm.$valid)" novalidate>
-       <div class="form-group" ng-class="{ 'has-error' : userForm.name.$invalid && !userForm.name.$pristine }">
-             <label>Nome</label>
-             <input type="text" name="nome" class="form-control" ng-model="cliente.nome" required>
-             <p ng-show="userForm.nome.$invalid && !userForm.nome.$pristine" class="help-block">Seu nome é obrigatório</p>
-        </div>
-       <div class="form-group" ng-class="{ 'has-error' : userForm.cpf.$invalid && !userForm.cpf.$pristine }">
+           <div class="form-group" ng-class="{ 'has-error' : userForm.nome.$invalid && !userForm.nome.$pristine }">
+    
+               <label>Nome</label>
+               <input type="text" name="nome" class="form-control" ng-model="cliente.nome" required>
+                 <p ng-show="userForm.nome.$invalid && !userForm.nome.$pristine" class="help-block">Seu nome é obrigatório</p>
+    </div>
+       
+     <div class="form-group" ng-class="{ 'has-error' : userForm.cpf.$invalid && !userForm.cpf.$pristine }">
              <label>Cpf</label>
-             <input type="text" name="cpf" class="form-control" ng-model="cliente.cpf" ng-minlength="9" ng-maxlength="11" required>
+          <input type="text" name="cpf" class="form-control" ng-model="cliente.cpf" ng-minlength="9" ng-maxlength="11" required>
              <p ng-show="userForm.cpf.$error.minlength" class="help-block">Cpf no mínimo 9 caracteres.</p>
              <p ng-show="userForm.cpf.$error.maxlength" class="help-block">Cpf no máximo 11 caracteres.</p>
-       </div>
-       <div class="form-group" ng-class="{ 'has-error' : userForm.telefone.$invalid && !userForm.telefone.$pristine }">
-             <label>Telefone</label>
-             <input type="text" name="telefone" class="form-control" ng-model="cliente.telefone" ng-minlength="8" ng-maxlength="9" required>
-             <p ng-show="userForm.telefone.$invalid && !userForm.telefone.$pristine" class="help-block">Informe um numero válido de no maxímo 9 digitos.</p>
+     </div>
+   
+     <div class="form-group" ng-class="{ 'has-error' : userForm.telefone.$invalid && !userForm.telefone.$pristine }">
+         <label>Telefone</label>
+         <input type="text" name="telefone" class="form-control" ng-model="cliente.telefone" ng-minlength="8" ng-maxlength="9" required>
+         <p ng-show="userForm.telefone.$invalid && !userForm.telefone.$pristine" class="help-block">Informe um numero válido de no maxímo 9 digitos.</p>
        </div>
                      
        <h4>Endereço</h4>
-      <div class="form-group" ng-class="{ 'has-error' : userForm.cep.$invalid && !userForm.cep.$pristine }">
+      
+       <div class="form-group" ng-class="{ 'has-error' : userForm.cep.$invalid && !userForm.cep.$pristine }">
              <label>Cep</label>
-             <input type="text" name="cep" class="form-control" ng-model="cep" required>
-             <input type="button"  class="btn btn-primary" ng-click="buscar(cep)" value="buscar">
-             <p ng-show="userForm.cep.$invalid && !userForm.cep.$pristine" class="help-block">Seu cep é obrigatório</p>
+             <input type="text" name="cep" class="form-control" ng-model="cep" ng-minlength="8" ng-maxlength="8" required>
+             <input type="button"  class="botao" ng-click="buscar(cep)" value="buscar">
+             <p ng-show="userForm.cep.$invalid && !userForm.cep.$pristine" class="help-block">Seu cep é obrigatório, devera ter somente 8 digitos</p>
                     </div>
                     <div class="form-group" ng-class="">
                         <label>Logradouro</label>
@@ -86,7 +91,7 @@
                         <input type="text" name="complemento" class="form-control" ng-model="endereco.complemento">
                     </div>
           
-                    <button type="submit" class="btn btn-primary" ng-disabled="userForm.$invalid">Enviar</button>
+                    <button type="submit" class="botao" ng-disabled="userForm.$invalid">Enviar</button>
         </form>
            </div>  
     </div>
@@ -100,7 +105,6 @@
                  </div>
                </footer>
             </div>
-       </div>             
-       
+       </div>              
 </body>           
 </html>    

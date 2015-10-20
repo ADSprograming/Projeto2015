@@ -45,10 +45,10 @@
                <section>
                  <h2>Slide</h2>
                  <p>
-                 <img ng-repeat="slide in slides"class="slide"ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
+                 <img ng-repeat="slide in slides"class="img"ng-hide="!isCurrentSlideIndex($index)" ng-src="{{slide.image}}">
                  </p>
-                 <input class="arrow prev" type="button" ng-click="prevSlide()">
-                 <input class="arrow next" type="button" ng-click="nextSlide()">
+                 <input type="button" class="botao" value="voltar" ng-click="prevSlide()">
+                 <input type="button"class="botao" value="proximo" ng-click="nextSlide()">
                </section>
               </div>
               <div class="coluna col5">

@@ -38,7 +38,7 @@ var app = angular.module('petSpa', [])
         
         $scope.submitForm = function(isValid) {
          if(isValid){
-            alert('Formulario ok');
+            alert('de boa');
         }
     };
         

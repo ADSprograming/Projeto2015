@@ -1,3 +1,4 @@
+
 body{
 font-family: 'Roboto', sans-serif;
 color:#333;
@@ -80,7 +81,8 @@ margin-right: 0;
 ul.sem-marcador, ol.sem-marcador{
 list-style: none;
 }
-a.botao, input.botao{
+
+button.botao, a.botao, input.botao{
 background: #1f3c58;
 padding: 5px 10px;
 border-radius: 3px;
@@ -90,7 +92,8 @@ margin: 5px,0;
 display: inline-block;
 border: none;
 }
-a.botao:hover, input.botao:hover{
+
+button.botao:hover,  a.botao:hover, input.botao:hover{
 background: #315e8a;
 text-decoration: none;
 }
@@ -172,17 +175,24 @@ height: 150px;
 .contato input.botao{
 width: auto;
 }
-
-button.arrow.prev  {
- background-image:url ("img/prev.png");
+.next  {
+ background-image :url ("prev.png");
  left: 20px;
-opacity: 0.2;
  transition: all 0.2s linear 0s;
+ text-decoration: none;
   }
-button.arrow.next {
- background-image:url ("img/next.png");
- opacity: 0.2;
+.prev {
+ background-image :url ("next.png");
  right: 20px;
  transition: all 0.2s linear 0s;
+ text-decoration: none;
   } 
+.img{
+
+    border-radius: 10px;
+    border:none;
+    display: block;
+    width:400px;
+    height:300px;
+}
 
