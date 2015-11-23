@@ -1,9 +1,0 @@
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\bin\Debug\PetSpa.exe.config
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\bin\Debug\PetSpa.exe
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\bin\Debug\PetSpa.pdb
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\obj\Debug\PetSpa.csprojResolveAssemblyReference.cache
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\obj\Debug\PetSpa.Form1.resources
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\obj\Debug\PetSpa.Properties.Resources.resources
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\obj\Debug\PetSpa.csproj.GenerateResource.Cache
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\obj\Debug\PetSpa.exe
-c:\users\aluno\documents\visual studio 2013\Projects\PetSpa\PetSpa\obj\Debug\PetSpa.pdb
