@@ -1,4 +1,0 @@
-C:\Users\miojo\Downloads\Pasta do projeto PetSpa\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.dll
-C:\Users\miojo\Downloads\Pasta do projeto PetSpa\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.pdb
-C:\Users\miojo\Downloads\Pasta do projeto PetSpa\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.dll
-C:\Users\miojo\Downloads\Pasta do projeto PetSpa\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.pdb
