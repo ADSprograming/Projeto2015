@@ -1,0 +1,5 @@
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.csprojResolveAssemblyReference.cache
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\bin\Debug\Biblioteca.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.dll
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\Biblioteca\obj\Debug\Biblioteca.pdb

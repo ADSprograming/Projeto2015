@@ -1,0 +1,29 @@
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\bin\Debug\SolucaoPetSpa.exe.config
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\bin\Debug\SolucaoPetSpa.exe
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\bin\Debug\SolucaoPetSpa.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.csprojResolveAssemblyReference.cache
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.Properties.Resources.resources
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.csproj.GenerateResource.Cache
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.exe
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.pdb
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaCliente.resources
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaFuncionario.resources
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.Atendimento.resources
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaServico.resources
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaAnimal.resources
+C:\Users\MegaKingBR\Documents\Visual Studio 2013\Projects\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaRaca.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\bin\Debug\SolucaoPetSpa.exe.config
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.exe
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.pdb
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\bin\Debug\SolucaoPetSpa.exe
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\bin\Debug\SolucaoPetSpa.pdb
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.csprojResolveAssemblyReference.cache
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.Atendimento.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.Properties.Resources.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaAgendamento.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaAnimal.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaCliente.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaFuncionario.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaRaca.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.TelaServico.resources
+C:\Users\Vinícius\Desktop\SoluçãoPetSpa\SolucaoPetSpa\obj\Debug\SolucaoPetSpa.csproj.GenerateResource.Cache
